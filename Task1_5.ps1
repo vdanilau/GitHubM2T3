@@ -13,7 +13,8 @@ if (Test-Path $file)
 
 $s=Import-csv $file\get-hotfix.csv 
  
-ForEach ($i in $s)  {Write-Host $i.Description  $i.HotFixID  $i.InstalledOn}
+ForEach ($i in $s) { 
+    Write-Host $i.Description  $i.HotFixID  $i.InstalledOn}
 
              
     
