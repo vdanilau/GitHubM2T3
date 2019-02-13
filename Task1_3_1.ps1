@@ -1,4 +1,6 @@
-﻿[string]$P=Read-Host ("Path to your Script.ps1")
+﻿#1.3.1.	Организовать запуск скрипта каждые 10 минут
+
+[string]$P=Read-Host ("Path to your Script.ps1")
 $date=get-date
 $Trig= New-JobTrigger -Once -At $date `
         -RepetitionInterval (New-TimeSpan -Minutes 2) `
