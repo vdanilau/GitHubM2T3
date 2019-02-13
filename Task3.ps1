@@ -1,1 +1,3 @@
-﻿Get-Module -ListAvailable
+﻿#3.	Получить список всех доступных модулей
+
+Get-Module -ListAvailable
