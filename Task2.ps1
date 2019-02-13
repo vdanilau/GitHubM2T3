@@ -1,6 +1,12 @@
-﻿New-Item -ItemType file -Path $profile -force
+﻿#2.1.	Создать профиль
+#2.2.	В профиле изненить цвета в консоли PowerShell`
+#2.3.	Создать несколько собственный алиасов
+#2.4.	Создать несколько констант
+#2.5.	Изменить текущую папку
+#2.6.	Вывести приветсвие
+#2.7.	Проверить применение профиля
 
-
+New-Item -ItemType file -Path $profile -force
  "(Get-Host).UI.RawUI.ForegroundColor = 'green' `n ` #цвет шрифта
  (Get-Host).UI.RawUI.BackgroundColor = 'black' `n `  #цвет фона
   Set-Alias HelpMе Get-Help `n `                    #алиас №1
