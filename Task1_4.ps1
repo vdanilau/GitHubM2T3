@@ -1,4 +1,8 @@
-﻿[Cmdletbinding(PositionalBinding=$false)]
+﻿#1.4.	Подсчитать размер занимаемый файлами в папке 
+#(например C:\windows) за исключением файлов 
+#с заданным расширением(напрмер .tmp)
+
+[Cmdletbinding(PositionalBinding=$false)]
 param (
         [string]$File= "C:\Windows",
         [string]$EF="*tmp"
